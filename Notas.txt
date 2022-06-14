@@ -1,0 +1,24 @@
+-- Curso Java spring boot pato chamorro
+
+
+git init
+git remote 
+git remote add origin https://github.com/vscvictor/ejemploPrueba.git
+git status
+
+git checkout -b feature/clase1
+
+git add .
+
+git commit -m "carga inicial"
+
+git push --set-upstream origin feature/clase1
+
+
+
+
+
+https://projectlombok.org/setup/eclipse
+
+Covertura de codigo
+https://stackoverflow.com/questions/69609794/sts4-how-to-run-code-coverage-in-spring-tools-suite-4
