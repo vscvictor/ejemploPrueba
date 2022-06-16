@@ -27,7 +27,7 @@ public class Store {
 	private Long storeId;
 	private String name;
 	private String category;
-	private String ouner;
+	private String owner;
 
 	@OneToMany(mappedBy="store", fetch = FetchType.LAZY,cascade = CascadeType.PERSIST)
 	List<StoreStock> storeStock;

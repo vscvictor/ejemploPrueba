@@ -5,15 +5,11 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-
 @Setter
 @Getter
 @AllArgsConstructor
 @NoArgsConstructor
-public class StoreDto {
-
-	private Long storeId;
-	private String name;
-	private String category;
-	private String owner;
+public class ResponseDto {
+    
+    private String message;
 }
