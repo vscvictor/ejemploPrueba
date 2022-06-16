@@ -32,10 +32,14 @@ public class OrderHeader {
   private Date dateOrdered;
   
   @ManyToOne(  fetch = FetchType.LAZY, optional = true)
-	@JoinColumn(name = "userId", nullable = true)
+	@JoinColumn(name = "clientId", nullable = true)
   private Client client;
 
-  @OneToMany( mappedBy="orderHeader", fetch = FetchType.LAZY,cascade = CascadeType.ALL)
+  @ManyToOne(fetch = FetchType.LAZY, optional = true)
+  @JoinColumn(name = "storeId", nullable = false)
+  private Store store;
+
+  @OneToMany( mappedBy="orderHeader", fetch = FetchType.LAZY,cascade = CascadeType.PERSIST)
   private List<OrderDetail> orderDetails;
 
 }

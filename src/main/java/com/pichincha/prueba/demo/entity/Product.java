@@ -26,10 +26,10 @@ public class Product {
 	private Long productId;
 	private String name;
 	
-	@OneToMany(mappedBy="product", fetch = FetchType.LAZY,cascade = CascadeType.ALL)
+	@OneToMany(mappedBy="product", fetch = FetchType.LAZY,cascade = CascadeType.PERSIST)
 	List<StoreStock> storeStocks;
 	
-	@OneToMany(mappedBy="product", fetch = FetchType.LAZY,cascade = CascadeType.ALL)
+	@OneToMany(mappedBy="product", fetch = FetchType.LAZY,cascade = CascadeType.PERSIST)
 	List<OrderDetail> OrderDetails;
 	
 

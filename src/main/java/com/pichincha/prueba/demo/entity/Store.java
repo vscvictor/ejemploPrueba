@@ -29,7 +29,7 @@ public class Store {
 	private String category;
 	private String ouner;
 
-	@OneToMany(mappedBy="store", fetch = FetchType.LAZY,cascade = CascadeType.ALL)
+	@OneToMany(mappedBy="store", fetch = FetchType.LAZY,cascade = CascadeType.PERSIST)
 	List<StoreStock> storeStock;
 
 	

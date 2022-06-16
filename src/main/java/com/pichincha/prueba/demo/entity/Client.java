@@ -27,7 +27,7 @@ public class Client {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 
 	private long clientId;
-	private String userName;
+	private String Name;
 	private Date createdDate;
 
 	@OneToMany(mappedBy = "client" , fetch = FetchType.LAZY, cascade = CascadeType.PERSIST )
