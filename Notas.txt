@@ -22,3 +22,9 @@ https://projectlombok.org/setup/eclipse
 
 Covertura de codigo
 https://stackoverflow.com/questions/69609794/sts4-how-to-run-code-coverage-in-spring-tools-suite-4
+eclemma-java-code-coverage
+
+
+
+'C:\Program Files\Java\jdk-11.0.2\bin\java.exe' '-agentlib:jdwp=transport=dt_socket,server=n,suspend=y,address=localhost:52442' '@C:\Users\vsc-v\AppData\Local\Temp\cp_8vvfahef9wnqrnkngj1uk1bin1.argfile' 'com.pichincha.prueba.demo.EjemploPruebaApplication'
+
